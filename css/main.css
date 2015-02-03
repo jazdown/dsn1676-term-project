@@ -37,6 +37,7 @@ body {
     width: 110px;
     background: url(../images/meteor.svg) 0 0 / 110px 120px;
     position: relative;
+    -webkit-animation: meteor-falling 800ms linear infinite;
     animation: meteor-falling 800ms linear infinite;
 }
 
@@ -45,6 +46,7 @@ body {
     width: 110px;
     background: url(../images/meteor.svg) 0 0 / 110px 120px;
     position: relative;
+    -webkit-animation: meteor-falling 1200ms linear infinite;
     animation: meteor-falling 1200ms linear infinite;
 } 
 
@@ -53,6 +55,7 @@ body {
     width: 110px;
     background: url(../images/meteor.svg) 0 0 / 110px 120px;
     position: relative;
+    -webkit-animation: meteor-falling 1000ms linear infinite;
     animation: meteor-falling 1000ms linear infinite;
 }
 
@@ -61,7 +64,19 @@ body {
     width: 110px;
     background: url(../images/meteor.svg) 0 0 / 110px 120px;
     position: relative;
+    -webkit-animation: meteor-falling 1600ms linear infinite;
     animation: meteor-falling 1600ms linear infinite;
+}
+
+@-webkit-keyframes meteor-falling {
+    
+    0% {
+        -webkit-transform: translate(600px,-300px);
+    }
+    
+    100% {
+        -webkit-transform: translate(100px,400px);
+    }
 }
 
 @keyframes meteor-falling {
@@ -89,7 +104,19 @@ body {
     background: url(../images/bird.svg) 0 0 / 72px 216px no-repeat;
     position: relative;
     top: 14%;
+    -webkit-animation: flapping 500ms steps(3) infinite, flying 15s linear infinite;
     animation: flapping 500ms steps(3) infinite, flying 15s linear infinite;
+}
+
+@-webkit-keyframes flapping {
+    
+    0% {
+        -webkit-background-position: 0 0;
+    }
+    
+    100% {
+        -webkit-background-position: 0 -216px;
+    }
 }
 
 @keyframes flapping {
@@ -101,6 +128,17 @@ body {
     100% {
         background-position: 0 -216px;
     }
+}
+
+@-webkit-keyframes flying {
+    
+    0% {
+        -webkit-transform: translate(-100px,0);
+    }
+    
+    100% {
+        -webkit-transform: translate(1300px,0);
+    }   
 }
 
 @keyframes flying {
@@ -120,7 +158,19 @@ body {
     background: url(../images/cloud.svg) 0 0 / 108px 57px;
     position: relative;
     top: -100px;
+    -webkit-animation: cloud-float 25s linear infinite;
     animation: cloud-float 25s linear infinite;
+}
+
+@-webkit-keyframes cloud-float {
+    
+    0% {
+        -webkit-transform: translate(-100px, 0);
+    }
+    
+    100% {
+        -webkit-transform: translate(1000px,0);
+    }
 }
 
 @keyframes cloud-float {
@@ -137,4 +187,3 @@ body {
 .good-scene:hover {
     display: none;
 }
-
