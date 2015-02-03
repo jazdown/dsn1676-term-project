@@ -59,15 +59,6 @@ body {
     animation: meteor-falling 1000ms linear infinite;
 }
 
-.meteor-4 {
-    height: 120px;
-    width: 110px;
-    background: url(../images/meteor.svg) 0 0 / 110px 120px;
-    position: relative;
-    -webkit-animation: meteor-falling 1600ms linear infinite;
-    animation: meteor-falling 1600ms linear infinite;
-}
-
 @-webkit-keyframes meteor-falling {
     
     0% {
