@@ -55,15 +55,17 @@ body {
     color: white;
     font-family: "Amatic SC", sans-serif;
     text-align: center;
-    margin: 0 auto;
     position: absolute;
     bottom: 60px;
+    padding: 0;
+    left: calc(50% - 95px);
     transition: all 600ms ease-in-out;
 }
 
 .apoca-title:hover {
     color: #FFFF99;
     font-size: 4em;
+    left: calc(50% - 2.5em);
 }
 
 .evil-scene {
