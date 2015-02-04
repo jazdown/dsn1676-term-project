@@ -188,18 +188,18 @@ body {
     position: relative;
     transform: translateY(20px);
     top: 14%;
-    -webkit-animation: flapping 1200ms steps(3) infinite, flying 10s linear infinite;
+    -webkit-animation: flapping 400ms steps(3) infinite, flying 10s linear infinite;
     animation: flapping 400ms steps(3) infinite, flying 10s linear infinite;
 }
 
 @-webkit-keyframes flapping {
     
     0% {
-        -webkit-background-position: 0 0;
+        background-position: 0 0;
     }
     
     100% {
-        -webkit-background-position: 0 -216px;
+        background-position: 0 -216px;
     }
 }
 
