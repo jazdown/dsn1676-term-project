@@ -18,9 +18,12 @@ html {
 }
 
 body {
-    overflow: hidden;
     margin: 0;
     padding: 0;
+}
+
+img {
+  width: 100%;
 }
 
 .nav {
@@ -329,4 +332,21 @@ body {
     100% {
         transform: translate(1000px,0);
     }
+}
+
+.boxboxbox {
+  position: relative;
+}
+
+.art-image,
+.prem-image,
+.proph-image {
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  transition: all 200ms linear;
+} 
+
+.js-toggle-show {
+  opacity: 1;
 }
