@@ -49,6 +49,7 @@ header {
   font-family: "Amatic SC", sans-serif;
   font-size: 1.75em;
   color: #424C29;
+  transition: all 600ms ease-in-out;
 }
 
 .nav a:hover {
@@ -104,10 +105,10 @@ header {
 
 .learn-button a {
   font-family: sans-serif;
-  bottom: 10px;
+  top: 30px;
   padding: 10px 0;
   width: 150px;
-  left: calc(50% - 75px);
+  right: calc(50% - 75px);
   text-align: center;
   text-decoration: none;
   color: #585858;
@@ -119,7 +120,7 @@ header {
   transition: all 500ms linear;
 }
 
-.learn-button a:hover,{
+.learn-button a:hover {
   background-color: #585858;
   color: white;
 }
@@ -350,13 +351,14 @@ header {
 .prem-btn,
 .proph-btn {
   width: 33%;
-  padding: 15px;
-  float: right;
+  padding: 10px;
+  display: inline-block;
   text-align: center;
   color: #FFF;
   background-color: #000;
   text-decoration: none;
   border: none;
+  font-family: "Amatic SC", sans-serif;
   transition: all 500ms linear;
 }
 
@@ -373,7 +375,7 @@ header {
   opacity: 0;
   left: 0;
   position: absolute;
-  top: 46px;
+  top: 211px;
   transition: all 200ms linear;
 } 
 
@@ -387,6 +389,22 @@ header {
   opacity: 1;
 }
 
-@media only screen and (min-width: 50em) {
-
-}
+@media only screen and (min-width: 38em) {
+  
+  .art-btn,
+  .prem-btn,
+  .proph-btn {
+    float: left;
+  }
+  
+  .art-image,
+  .prem-image,
+  .proph-image {
+    top: 70px;
+  }
+  
+  .learn-button a {
+    right: 7%;
+    float: right;
+    top: 10px;
+  }
