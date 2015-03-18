@@ -11,6 +11,8 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
+  
+  background-color: #000;
 }
 
 *, *:before, *:after {
@@ -26,12 +28,18 @@ img {
   width: 100%;
 }
 
+header {
+  min-height: 77px;
+  background-color: #FFF;
+}
+
 .nav {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  background-color: #E2E2E2;
-  display: none;
+  background-color: #CCC;
+  max-height: 0;
+  transition: all 600ms ease-in-out;
 }
 
 .nav a {
@@ -41,7 +49,6 @@ img {
   font-family: "Amatic SC", sans-serif;
   font-size: 1.75em;
   color: #424C29;
-  transition: all 500ms ease-in-out;
 }
 
 .nav a:hover {
@@ -55,7 +62,7 @@ img {
 } 
 
 .nav-check:checked ~ .nav {
-  display: block;
+  max-height: 245px;
 }
 
 .nav-label {
@@ -336,21 +343,20 @@ img {
 
 .boxboxbox {
   position: relative;
-  background-color: #E2E2E2;
+  background-color: #E8E8E8;;
 }
 
 .art-btn,
 .prem-btn,
 .proph-btn {
   width: 33%;
-  padding: 10px;
+  padding: 15px;
   float: right;
   text-align: center;
   color: #FFF;
-  background-color: #585858;
+  background-color: #000;
   text-decoration: none;
   border: none;
-  border-radius: 50px;
   transition: all 500ms linear;
 }
 
@@ -367,12 +373,20 @@ img {
   opacity: 0;
   left: 0;
   position: absolute;
-  top: 50px;
+  top: 46px;
   transition: all 200ms linear;
-  z-index: 0;
 } 
+
+.art-box,
+.prem-box,
+.proph-box {
+  padding: 0;
+}
 
 .js-toggle-show {
   opacity: 1;
-  z-index: 1;
+}
+
+@media only screen and (min-width: 50em) {
+
 }

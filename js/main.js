@@ -8,13 +8,19 @@ var $imgThirdShow = $('.proph-image');
 var $btnProphShowHide = $('.proph-btn');
 
 $btnArtShowHide.on('click', function () {
+  $imgSecondShow.removeClass('js-toggle-show');
+  $imgThirdShow.removeClass('js-toggle-show');
   $imgFirstShow.toggleClass('js-toggle-show');
 });
 
 $btnPremShowHide.on('click', function () {
+  $imgFirstShow.removeClass('js-toggle-show');
+  $imgThirdShow.removeClass('js-toggle-show');
   $imgSecondShow.toggleClass('js-toggle-show');
 });
 
 $btnProphShowHide.on('click', function () {
+  $imgFirstShow.removeClass('js-toggle-show');
+  $imgSecondShow.removeClass('js-toggle-show');
   $imgThirdShow.toggleClass('js-toggle-show');
 });
