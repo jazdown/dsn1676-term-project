@@ -119,6 +119,10 @@ header {
   transition: all 500ms linear;
 }
 
+.back-top-button {
+  margin-top: 2em;
+}
+
 .back-top-button a {
   font-family: sans-serif;
   bottom: 30px;
@@ -143,6 +147,7 @@ header {
 
 footer {
   position: relative;
+  height: 5em;
 }
 
 .apoca-title {
@@ -428,27 +433,34 @@ footer {
     float: right;
     top: 10px;
   }
+}
+
 .main-content {
-  padding-top: 5em;
-  background-color: #CCC;
+  padding: 0 10px;
+  background-color: #FFF;
+  margin-top: 60%;
   z-index: 1;
 }
 
 .theorists,
 .prophecies,
 .hist-rep {
-  position: absolute;
   font-family: "Amatic SC", sans-serif;
   color: #424C29;
-  top: 0;
-}  
+  padding: 0;
+} 
+
+.theorists {
+  padding-top: 2em; 
+}
+
+.hist-rep {
+  padding-bottom: 2em;
+}
   
 .theorists p,
 .prophecies p,
 .hist-rep p {
-  color: #CCC;
+  color: #585858;
+  font-family: sans-serif;
 }
-
-  
-  
-  
