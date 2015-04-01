@@ -434,10 +434,20 @@ footer {
   z-index: 1;
 }
 
-.theorists {
+.theorists,
+.prophecies,
+.hist-rep {
   position: absolute;
+  font-family: "Amatic SC", sans-serif;
+  color: #424C29;
   top: 0;
 }  
+  
+.theorists p,
+.prophecies p,
+.hist-rep p {
+  color: #CCC;
+}
 
   
   
