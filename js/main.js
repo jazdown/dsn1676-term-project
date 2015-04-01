@@ -24,3 +24,9 @@ $btnProphShowHide.on('click', function () {
   $imgSecondShow.removeClass('js-toggle-show');
   $imgThirdShow.toggleClass('js-toggle-show');
 });
+
+$('.nav').localScroll();
+
+$('.learn-button').localScroll();
+
+$('.back-top-button').localScroll();

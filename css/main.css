@@ -113,16 +113,36 @@ header {
   text-decoration: none;
   color: #585858;
   background-color: white;
-  text-decoration: none;
   border: none;
   border-radius: 50px;
   position: absolute;
   transition: all 500ms linear;
 }
 
-.learn-button a:hover {
+.back-top-button a {
+  font-family: sans-serif;
+  bottom: 30px;
+  padding: 10px 0;
+  width: 150px;
+  right: calc(50% - 75px);
+  text-align: center;
+  text-decoration: none;
+  color: #585858;
+  background-color: white;
+  border: none;
+  border-radius: 50px;
+  position: absolute;
+  transition: all 500ms linear;
+}
+
+.learn-button a:hover,
+.back-top-button a:hover {
   background-color: #585858;
   color: white;
+}
+
+footer {
+  position: relative;
 }
 
 .apoca-title {
@@ -377,7 +397,7 @@ header {
   position: absolute;
   top: 211px;
   transition: all 200ms linear;
-} 
+}
 
 .art-box,
 .prem-box,
@@ -408,3 +428,17 @@ header {
     float: right;
     top: 10px;
   }
+.main-content {
+  padding-top: 5em;
+  background-color: #CCC;
+  z-index: 1;
+}
+
+.theorists {
+  position: absolute;
+  top: 0;
+}  
+
+  
+  
+  
