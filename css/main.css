@@ -389,8 +389,11 @@ header {
   opacity: 1;
 }
 
-.nostra-full,
 .prophet-book {
+  display: none;
+}
+
+.nostra-full {
   display: none;
 }
 
