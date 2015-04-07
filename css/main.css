@@ -119,26 +119,6 @@ header {
   transition: all 500ms linear;
 }
 
-.back-top-button {
-  margin-top: 2em;
-}
-
-.back-top-button a {
-  font-family: sans-serif;
-  bottom: 40px;
-  padding: 10px 0;
-  width: 150px;
-  right: calc(50% - 75px);
-  text-align: center;
-  text-decoration: none;
-  color: #585858;
-  background-color: white;
-  border: none;
-  border-radius: 50px;
-  position: absolute;
-  transition: all 500ms linear;
-}
-
 .learn-button a:hover,
 .back-top-button a:hover {
   background-color: #585858;
@@ -440,6 +420,7 @@ header {
 .theorists,
 .prophecies,
 .hist-rep {
+  position: relative;
   font-family: "Amatic SC", sans-serif;
   color: #424C29;
   padding: 0;
@@ -459,20 +440,46 @@ header {
   color: #585858;
   font-family: sans-serif;
 }
+  
+.nostradamus {
+  display: inline-block;
+  position: absolute;
+  height: 200px;
+  right: 10px;
+}
 
-footer {
-  height: 5em;
-  position: relative;
+.back-top-button {
+  margin-top: 2em;
+}
+
+.back-top-button a {
+  font-family: sans-serif;
+  top: 30px;
+  padding: 10px 0;
+  height: 3em;
+  width: 150px;
+  right: calc(50% - 75px);
+  text-align: center;
+  text-decoration: none;
+  color: #585858;
+  background-color: white;
+  border: none;
+  border-radius: 50px;
+  position: absolute;
+  transition: all 500ms linear;
+  z-index: 1;
 }
 
 .svg-anim {
+  width: auto;
   position: relative;
   overflow: hidden;
   height: 25em;
 }
 
 .waves {
-  left: -100px;
+  width: auto;
+  left: calc(50% - 706px);
   position: absolute;
   bottom: -50px;
 }
