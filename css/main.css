@@ -389,6 +389,11 @@ header {
   opacity: 1;
 }
 
+.nostra-full,
+.prophet-book {
+  display: none;
+}
+
 @media only screen and (min-width: 38em) {
   
   .art-btn,
@@ -407,6 +412,29 @@ header {
     right: 7%;
     float: right;
     top: 10px;
+  }
+    
+  .nostra-full,
+  .prophet-book {
+    position: absolute;
+    display: inline-block;
+    width: 50%;
+    padding: 10px;
+    right: 10px;
+    z-index: 1;
+  }
+  
+  .prophet-book {
+      transform: translateY(-150px);
+  }
+  
+  #pen {
+    animation: pen-write 1400ms ease-in-out infinite;
+  }
+  
+  #eyes {
+    transform: translate(0);
+    animation: eye-move 1200ms ease-in-out infinite alternate;
   }
 }
 
@@ -440,13 +468,6 @@ header {
   color: #585858;
   font-family: sans-serif;
 }
-  
-.nostradamus {
-  display: inline-block;
-  position: absolute;
-  height: 200px;
-  right: 10px;
-}
 
 .back-top-button {
   margin-top: 2em;
@@ -470,7 +491,25 @@ header {
   z-index: 1;
 }
 
-.svg-anim {
+@keyframes eye-move {
+  0% {
+    transform: translateX(0px);
+  }
+  
+  30% {
+    transform: translateX(0px);
+  }
+  
+  60% {
+    transform: translateX(-15px);
+  }
+  
+  100% {
+    transform: translateX(-15px);
+  }
+}
+
+.wave-anim {
   width: auto;
   position: relative;
   overflow: hidden;
@@ -496,7 +535,7 @@ header {
 
 #third-wave {
   transform: translateX(40px);
-  animation: back-forth 1500ms ease-in-out infinite alternate;
+  animation: back-forth 1500ms ease-in-out infinite;
   width: 100%;
 }
 
@@ -521,3 +560,60 @@ header {
     transform: translateX(-70px);
   }
 }
+
+@keyframes pen-write {
+  
+  0% {
+    transform: translateX(10px) translateY(0);
+  }
+  
+  10% {
+    transform: translateX(30px) translateY(-15px);
+  }
+  
+  20% {
+    transform: translateX(50px) translateY(10px);
+  }
+
+  30% {
+    transform: translateX(70px) translateY(-15px);
+  }  
+  
+  40% {
+    transform: translateX(90px) translateY(10px);
+  }
+  
+  50% {
+    transform: translateX(110px) translateY(-15px);
+  }
+  
+  60% {
+    transform: translateX(130px) translateY(10px);
+  }
+  
+  70% {
+    transform: translateX(150px) translateY(-15px);
+  }  
+  
+  80% {
+    transform: translateX(180px) translateY(10px);
+  } 
+  
+  90% {
+    transform: translateX(180px) translateY(-15px);
+  }
+  
+  100% {
+    transform: translateX(0px) translateY(10px);
+  }
+}
+
+
+
+
+
+
+
+
+
+
