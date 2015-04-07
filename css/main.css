@@ -125,7 +125,7 @@ header {
 
 .back-top-button a {
   font-family: sans-serif;
-  bottom: 30px;
+  bottom: 40px;
   padding: 10px 0;
   width: 150px;
   right: calc(50% - 75px);
@@ -143,11 +143,6 @@ header {
 .back-top-button a:hover {
   background-color: #585858;
   color: white;
-}
-
-footer {
-  position: relative;
-  height: 5em;
 }
 
 .apoca-title {
@@ -463,4 +458,59 @@ footer {
 .hist-rep p {
   color: #585858;
   font-family: sans-serif;
+}
+
+footer {
+  height: 5em;
+  position: relative;
+}
+
+.svg-anim {
+  position: relative;
+  overflow: hidden;
+  height: 25em;
+}
+
+.waves {
+  left: -100px;
+  position: absolute;
+  bottom: -50px;
+}
+
+#first-wave {
+  animation: back-forth 1500ms ease-in-out infinite alternate;
+  width: 100%;
+}
+
+#second-wave {
+  animation: forth-back 1500ms ease-in-out infinite alternate;
+  width: 100%;
+}
+
+#third-wave {
+  transform: translateX(40px);
+  animation: back-forth 1500ms ease-in-out infinite alternate;
+  width: 100%;
+}
+
+@keyframes back-forth {
+  
+  0% {
+    transform: translateX(-70px);
+  }
+  
+  100% {
+    transform: translateX(30px);
+  }
+}
+
+@keyframes forth-back {
+  
+  0% {
+    transform: translateX(30px);
+  }
+  
+  100% {
+    transform: translateX(-70px);
+  }
 }
