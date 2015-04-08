@@ -605,7 +605,7 @@ header {
 }
 
 #first-wave {
-  -webbkit-animation: back-forth 1500ms ease-in-out infinite alternate;
+  -webkit-animation: back-forth 1500ms ease-in-out infinite alternate;
   animation: back-forth 1500ms ease-in-out infinite alternate;
   width: 100%;
 }
