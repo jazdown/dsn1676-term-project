@@ -439,6 +439,7 @@ header {
   }
   
   .earth {
+    transform: translateY(-80px);
     -webkit-animation: earth-fade 3s linear infinite;
     animation: earth-fade 3s linear infinite;
   }
