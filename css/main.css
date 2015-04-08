@@ -389,14 +389,14 @@ header {
   opacity: 1;
 }
 
-.earth {
-  height: 0;
+.nostra-full,
+.prophet-book {
+  display: none;
+  top: 0;
 }
 
-.nostra-full,
-.prophet-book,
-.earth {
-  display: none;
+.prophet-book {
+  height: auto;
 }
 
 @media only screen and (min-width: 38em) {
@@ -420,12 +420,10 @@ header {
   }
     
   .nostra-full,
-  .prophet-book,
-  .earth {
+  .prophet-book {
     position: absolute;
     display: inline-block;
     width: 50%;
-    top: 0;
     padding: 10px;
     right: 10px;
     z-index: 1;
@@ -441,12 +439,6 @@ header {
     transform: translate(0);
     -webkit-animation: pen-write 1200ms ease-in-out infinite;
     animation: pen-write 1200ms ease-in-out infinite;
-  }
-  
-  .earth {
-    height: 400px;
-    -webkit-animation: earth-fade 3s linear infinite;
-    animation: earth-fade 3s linear infinite;
   }
 }
 
@@ -759,49 +751,5 @@ header {
   
   100% {
     transform: translateX(0px) translateY(10px);
-  }
-}
-
-@-webkit-keyframes earth-fade {
-  0% {
-    opacity: 1;
-  }
-  
-  10% {
-    opacity: 1;
-  }
-  
-  50% {
-    opacity: 0;
-  }
-  
-  90% {
-    opacity: 1;
-  }
-  
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes earth-fade {
-  0% {
-    opacity: 1;
-  }
-  
-  10% {
-    opacity: 1;
-  }
-  
-  50% {
-    opacity: 0;
-  }
-  
-  90% {
-    opacity: 1;
-  }
-  
-  100% {
-    opacity: 1;
   }
 }
