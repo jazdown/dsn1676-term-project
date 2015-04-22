@@ -615,19 +615,19 @@ header {
 
 @-webkit-keyframes eye-move {
   0% {
-    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
   }
   
   30% {
-    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
   }
   
   60% {
-    transform: translateX(-15px);
+    -webkit-transform: translateX(-15px);
   }
   
   100% {
-    transform: translateX(-15px);
+    -webkit-transform: translateX(-15px);
   }
 }
 
@@ -685,11 +685,11 @@ header {
 @-webkit-keyframes back-forth {
   
   0% {
-    transform: translateX(-70px);
+    -webkit-transform: translateX(-70px);
   }
   
   100% {
-    transform: translateX(30px);
+    -webkit-transform: translateX(30px);
   }
 }
 
@@ -707,11 +707,11 @@ header {
 @-webkit-keyframes forth-back {
   
   0% {
-    transform: translateX(30px);
+    -webkit-transform: translateX(30px);
   }
   
   100% {
-    transform: translateX(-70px);
+    -webkit-transform: translateX(-70px);
   }
 }
 
